@@ -115,7 +115,7 @@ def main():
 
 def addTwoImages(img, imgCanvas):
     imgGray = cv.cvtColor(imgCanvas, cv.COLOR_BGR2GRAY)
-    _, imgInv = cv.threshold(imgGray, 50, 255, cv.THRESH_BINARY_INV)
+    _, imgInv = cv.threshold(imgGray, 0, 255, cv.THRESH_BINARY_INV)
     imgInv = cv.cvtColor(imgInv, cv.COLOR_GRAY2BGR)
     img = cv.bitwise_and(img, imgInv)
     img = cv.bitwise_or(img, imgCanvas)
