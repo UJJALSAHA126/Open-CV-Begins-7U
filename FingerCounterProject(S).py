@@ -17,7 +17,7 @@ overlayList = []
 for imPath in myList :
     image = cv2.imread(f'{folderPath}/{imPath}')
     overlayList.append(image)
-# print(len(overlayList))
+# print(len(overlayList) )
 
 pTime = 0
 detector = htm.handDetector()
