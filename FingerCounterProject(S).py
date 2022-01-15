@@ -1,7 +1,7 @@
 import cv2
 import os
 import time
-import HandTrackingModeul as htm
+import HandTrackingModeul_S as htm
 
 wCam , hCam = 640,480
 
@@ -17,7 +17,7 @@ overlayList = []
 for imPath in myList :
     image = cv2.imread(f'{folderPath}/{imPath}')
     overlayList.append(image)
-# print(len(overlayList) )
+# print(len(overlayList))
 
 pTime = 0
 detector = htm.handDetector()

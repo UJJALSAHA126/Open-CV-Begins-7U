@@ -1,7 +1,7 @@
 import os
 import cv2 as cv
 import numpy as np
-import HandTrackingModeul as htm
+import HandTrackingModeul_S as htm
 import random
 
 drawcolor = (0,255,0)
