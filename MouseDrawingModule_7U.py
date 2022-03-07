@@ -120,7 +120,7 @@ class DrawUsingMouse:
                                 font='arial 15', width=100)
         self.colorLabel.grid(row=0, column=1, padx=10, pady=5, sticky='w')
 
-        self.x = IntVar(value=7)
+        self.x = IntVar(value=self.penSize)
         penSizeEntry = Entry(window, textvariable=self.x,
                              width=100, font='arial 15')
         penSizeEntry.grid(row=1, column=1, sticky='w', padx=10)
